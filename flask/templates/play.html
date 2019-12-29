@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <title>Nyårsfirande</title>
+
+
+</head>
+
+    
+<body>
+    
+    <div class="container-fluid">
+    {% for img in content %}
+        <div class="col-sm-4" style="width: 10%">
+            <img src="/static/images/{{ img.url }}" style="width : 100%">
+            <p> {{ img.num }}</p>
+        </div>
+        
+    {% endfor %}
+    </div>
+    
+    
+</body>
+
+</html>
+    

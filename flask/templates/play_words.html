@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <title>Nyårsfirande</title>
+
+
+</head>
+
+    
+<body>
+    
+    <h1>{{content[active].word}}</h1>
+    
+    <!-- Button -->
+    <div class="col-md-4">
+        <button id="submit" name="submit" class="btn btn-primary" onclick="location.href='/play_words/{{id}}/{{active + 1}}'">Next</button>
+    </div>
+
+    
+</body>
+
+</html>
+    
